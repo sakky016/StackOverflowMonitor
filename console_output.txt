@@ -1,0 +1,24 @@
+Accessing  https://stackoverflow.com
+Login
+Login using Google credentials
+Enter eMail
+Click Next button
+Enter password
+Click Next button
+
+** XXXXXXXXXXXXXX Logged In ***
+Go to profile
+Page will be refreshed next after 0:01:00
+Timestamp  :  2019-05-17 11:48:04.331462
+Reputation :  217
+Change     :  +33
+
+Refreshing page...
+Timestamp  :  2019-05-17 11:49:06.018691
+Reputation :  217
+Change     :  +33
+
+Refreshing page...
+Timestamp  :  2019-05-17 11:50:07.689195
+Reputation :  217
+Change     :  +33
