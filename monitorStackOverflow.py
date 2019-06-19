@@ -44,7 +44,6 @@ os.environ["webdriver.chrome.driver"] = chromeDriverPath
 browser = webdriver.Chrome(executable_path=chromeDriverPath)
 browser.implicitly_wait(IMPLICIT_WAIT)
 
-#browser.set_window_position(-2000, 0)
 browser.set_window_position(-2000, 0)
 print ("Accessing ", STACK_OVERFLOW_URL)
 browser.get(STACK_OVERFLOW_URL)
