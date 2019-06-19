@@ -14,7 +14,7 @@ IMPLICIT_WAIT = 10
 SLEEP_DURATION = 1
 
 # Duration (in seconds) to wait before page refresh
-REFRESH_WAIT_TIME = 60;
+REFRESH_WAIT_TIME = 12 * 60 * 60;
 
 # URL
 STACK_OVERFLOW_URL = r"https://stackoverflow.com"
@@ -23,9 +23,9 @@ STACK_OVERFLOW_URL = r"https://stackoverflow.com"
 loginButtonXpath = r'/html/body/header/div/ol/li[6]/a[1]'
 loginWithGoogleButtonXpath = r'//*[@id="openid-buttons"]/button[1]'
 emailTextXpath = r'//*[@id="identifierId"]'
-emailNextButtonXpath = r'//*[@id="identifierNext"]/content/span'
+emailNextButtonXpath = r'//*[@id="identifierNext"]/span/span'  
 pwdTextXpath = r'//*[@id="password"]/div[1]/div/div[1]/input'
-pwdNextButtonXpath = r'//*[@id="passwordNext"]/content/span'
+pwdNextButtonXpath = r'//*[@id="passwordNext"]/span/span' 
 profileXpath = r'/html/body/header/div/ol/li[2]/a'
 reputationXpath = r'//*[@id="top-cards"]/aside[1]/div/div/div[1]/div[1]/div[1]/span[1]'
 reputationIncreaseXpath = r'//*[@id="top-cards"]/aside[1]/div/div/div[1]/div[1]/div[1]/span[2]'
@@ -45,6 +45,7 @@ browser = webdriver.Chrome(executable_path=chromeDriverPath)
 browser.implicitly_wait(IMPLICIT_WAIT)
 
 #browser.set_window_position(-2000, 0)
+browser.set_window_position(-2000, 0)
 print ("Accessing ", STACK_OVERFLOW_URL)
 browser.get(STACK_OVERFLOW_URL)
 time.sleep(SLEEP_DURATION) 
